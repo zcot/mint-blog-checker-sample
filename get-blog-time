@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# Copyright 2019 Scott Caudle
+#
+#    This file is part of mint-blog-checker-sample.
+#
+#    mint-blog-checker-sample is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    mint-blog-checker-sample is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with mint-blog-checker-sample.  If not, see <https://www.gnu.org/licenses/>.
+
+
+rssremotefile=rss-from-website.xml
+wget --quiet -O $rssremotefile http://www.linuxmint.com/planet/rss.xml
+grep -m1 lastBuildDate $rssremotefile > time

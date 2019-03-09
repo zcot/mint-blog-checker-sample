@@ -1,0 +1,14 @@
+# The sample conveys a simple idea to have a "Mint blog checker" program.
+# It carries the basic functionality of what the Firefox rss feed was doing.
+# I found some random icon and butchered on it a bit for the example.
+# -zcot
+#
+# This is my first python sample program aside from hello world, though
+# I've done years of c/cpp programming. This is not python 3 though.
+# I found a functioning simple status icon program and started from that,
+# Anyway, very novice attempt here, but represents the idea.
+#
+
+# found on <http://files.majorsilence.com/rubbish/pygtk-book/pygtk-notebook-html/pygtk-notebook-latest.html#SECTION00430000000000000000>
+# simple example of a tray icon application using PyGTK
+

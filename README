@@ -1,0 +1,36 @@
+# Copyright 2019 Scott Caudle
+#
+#    This file is part of mint-blog-checker-sample.
+#
+#    mint-blog-checker-sample is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    mint-blog-checker-sample is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with mint-blog-checker-sample.  If not, see <https://www.gnu.org/licenses/>.
+
+
+General program overview:
+1. Overall it's a status icon program, and shows a different colored icon for new blog entry
+    -at any time the user can see the mint blog using xdg open method.
+2. A timer loop is set to 6 hours for checking blog entry.
+3. Code downloads mint blog file,
+    -compares the date of the latest date to a previously saved date(or null date on first run),
+    -with date difference then a green icon is shown, otherwise and orange icon(programmer's artwork).
+
+TODO:
+-installer
+-desktop file
+-autostart
+-tooltips
+-panel plugin integration? different for each MATE, Xfce, and Cinnamon?
+-nice icon
+-?
+
+
