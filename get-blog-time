@@ -20,4 +20,4 @@
 
 rssremotefile=rss-from-website.xml
 wget --quiet -O $rssremotefile http://www.linuxmint.com/planet/rss.xml
-grep -m1 lastBuildDate $rssremotefile > time
+xmllint --xpath //lastBuildDate $rssremotefile > time
